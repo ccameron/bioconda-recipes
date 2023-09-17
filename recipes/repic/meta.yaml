@@ -30,7 +30,7 @@ build:
     - repic = repic.main:main
   script:             {{ PYTHON }} -m pip install . --ignore-installed --no-deps -vv
   run_exports:
-    - {{ pin_subpackage("repic", max_pin='x') }}
+    - {{ pin_subpackage('repic', max_pin="x") }}
 
 test:
   commands:
